@@ -85,7 +85,7 @@ switch (yystate) {
 case 1: typeof console !== 'undefined' ? console.log($$[$0-1]) : print($$[$0-1]);
           return $$[$0-1]; 
 break;
-case 2:this.$ = $$[$0-2] + $$[$0-1] + '+';
+case 2:this.$ = $$[$0-2] + $$[$0] + '+';
 break;
 case 3:this.$ = $$[$0-2]-$$[$0];
 break;
@@ -111,7 +111,7 @@ case 12:this.$ = Math.E;
 break;
 case 13:this.$ = Math.PI;
 break;
-case 14:this.$ = $$[$0-2] + $$[$0-1] + '=';
+case 14:this.$ = $$[$0-2] + $$[$0] + '=';
 break;
 case 15:this.$ = '&' + $$[$0];
 break;
