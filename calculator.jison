@@ -20,6 +20,7 @@
 "E"                   return 'E'
 <<EOF>>               return 'EOF'
 "="					  return '='
+"=="	  			  return '=='
 [a-z]+\b			  return 'ID'
 .                     return 'INVALID'
 
@@ -28,6 +29,7 @@
 /* operator associations and precedence */
 
 %right '='
+%left '=='
 %left '+' '-'
 %left '*' '/'
 %left '^'
@@ -75,5 +77,7 @@ e
 	| e '=' e
 	
 	| ID
+	
+	| e '==' e
     ;
 
