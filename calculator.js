@@ -105,8 +105,6 @@ case 9:this.$ = -$$[$0];
 break;
 case 10:this.$ = $$[$0-1];
 break;
-case 11:this.$ = Number(yytext);
-break;
 case 12:this.$ = Math.E;
 break;
 case 13:this.$ = Math.PI;
