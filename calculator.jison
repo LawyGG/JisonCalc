@@ -19,12 +19,15 @@
 "PI"                  return 'PI'
 "E"                   return 'E'
 <<EOF>>               return 'EOF'
+"="					  return '='
+[a-z]+\b			  return 'ID'
 .                     return 'INVALID'
 
 /lex
 
 /* operator associations and precedence */
 
+%right '='
 %left '+' '-'
 %left '*' '/'
 %left '^'
@@ -69,5 +72,8 @@ e
         {$$ = Math.E;}
     | PI
         {$$ = Math.PI;}
+	| e '=' e
+	
+	| ID
     ;
 
