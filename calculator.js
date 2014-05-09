@@ -111,6 +111,8 @@ case 12:this.$ = Math.E;
 break;
 case 13:this.$ = Math.PI;
 break;
+case 14:this.$ = $$[$0-2] + $$[$0-1] + '=';
+break;
 case 15:this.$ = '&' + $$[$0];
 break;
 }
