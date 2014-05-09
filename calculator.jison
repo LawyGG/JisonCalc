@@ -69,7 +69,7 @@ e
     | '(' e ')'
         {$$ = $2;}
     | NUMBER
-        {$$ = Number(yytext);}
+        {$$ = yytext;}
     | E
         {$$ = Math.E;}
     | PI
